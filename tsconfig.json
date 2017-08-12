@@ -6,11 +6,14 @@
     "allowJs": true,                          /* Allow javascript files to be compiled. */
     "outDir": "dist",                        /* Redirect output structure to the directory. */
     "strict": false,                           /* Enable all strict type-checking options. */
-    "noImplicitAny": true,               /* Raise error on expressions and declarations with an implied 'any' type. */
+    "noImplicitAny": false,               /* Raise error on expressions and declarations with an implied 'any' type. */
     "sourceMap": true,
     "typeRoots": [ "node_modules/@types/" ],
     "types": [ "bootstrap", "lodash"],
-    "lib": ["es2015", "es2015.iterable", "dom"]
+    "lib": ["es2015", "es2015.iterable", "dom"],
+    "experimentalDecorators": true,
+    "noStrictGenericChecks": true,
+    "emitDecoratorMetadata": true
   },
    "include": [
     "./src/**/*.ts"

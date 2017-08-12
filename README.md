@@ -8,10 +8,26 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Node installed
+Install npm
 
 ### Run
 
+setup node_modules:
+
 ```
-node /path/to/tsc
+npm install
+```
+
+run webpack:
+
+```
+node node_modules/webpack/bin/webpack
+```
+
+use --watch to run in watch mode
+
+setup http-server to run in browser:
+
+```
+node node_modules/http-server/bin/http-server
 ```

@@ -1,10 +1,13 @@
 var path = require("path");
 
 module.exports = {
-    entry: "app.ts",
+    entry: {
+    'polyfills': __dirname + '/src/polyfill.ts',
+    'app': __dirname + '/src/bootstrap.ts'
+    },
     output: {
-        filename: "bundle.js",
-        path: __dirname + '/dist'
+        path: __dirname + '/dist',
+        filename: '[name].bundle.js'
     },
     resolve: {
         modules: [
