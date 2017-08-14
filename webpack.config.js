@@ -3,7 +3,7 @@ var path = require("path");
 module.exports = {
     entry: {
     'polyfills': __dirname + '/src/polyfill.ts',
-    'app': __dirname + '/src/bootstrap.ts'
+    'app': __dirname + '/src/main.ts'
     },
     output: {
         path: __dirname + '/dist',
