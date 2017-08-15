@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from './components/content/content.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ImageGridComponent } from './components/imageGrid/imagegrid.component';
+import { ProductDetailsComponent } from './components/productDetails/productDetails.component';
 import { routing, routes } from './app/app.routes';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { routing, routes } from './app/app.routes';
                  FooterComponent,
                  ContentComponent,
                  NavComponent,
-                 ImageGridComponent],
+                 ImageGridComponent,
+                 ProductDetailsComponent],
   providers:    [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap:    [AppComponent]
 })

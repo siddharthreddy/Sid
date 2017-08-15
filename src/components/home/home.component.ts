@@ -11,9 +11,7 @@ export class HomeComponent implements OnInit {
     randomTextInterval: number;
     randomColorInterval: number;
 
-    constructor(private router: Router) {
-        console.info('home component found');
-    };
+    constructor(private router: Router) {};
 
     ngOnInit(): void {
         this.main();
@@ -43,10 +41,8 @@ export class HomeComponent implements OnInit {
 
     public loadAppHome(): void {
         this.showHome = false;
-        //console.info(this.refreshIntervalId, this.refreshIntervalId1);
         clearInterval(this.randomTextInterval);
         clearInterval(this.randomColorInterval);
-        //document.body.id = "b12";
         this.router.navigate(['/landing']);
     };
 

@@ -1,19 +1,18 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
  
 @Component({
   selector: 'sidebar',
-  templateUrl: '/src/components/nav/nav',
-  outputs: ['childData : outgoingData']
+  templateUrl: '/src/components/nav/nav'
 })
 
 export class NavComponent implements OnInit {
 
-   @Output('childData') outgoingData = new EventEmitter<string>();
-
-    constructor() {}
+    constructor(private router: Router) {}
 
     ngOnInit() {
       this.registerSelection();
+      this.onSelect(10);
     }
 
     registerSelection(): void {
@@ -29,8 +28,8 @@ export class NavComponent implements OnInit {
       
     }
 
-    onSelect(id: string) : void {
-      this.outgoingData.emit(id);
+    onSelect(id: number) : void {
+      this.router.navigate(['/landing', {outlets: {'firstchild': [id]}}]);
     }
 
 }

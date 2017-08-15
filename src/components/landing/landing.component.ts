@@ -8,8 +8,6 @@ export class LandingPageComponent {
 
     constructor() {}
 
-    ngOnInit() {
-    console.log('LandingPageComponent ngOnInit called');
-    }
+    ngOnInit() {}
 
  }
