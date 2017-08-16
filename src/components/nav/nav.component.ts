@@ -29,7 +29,7 @@ export class NavComponent implements OnInit {
     }
 
     onSelect(id: number) : void {
-      this.router.navigate(['/landing', {outlets: {'firstchild': [id]}}]);
+      this.router.navigate(['/landing', {outlets: {'firstchild': ['list', id]}}]);
     }
 
 }

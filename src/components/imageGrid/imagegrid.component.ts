@@ -35,6 +35,7 @@ export class ImageGridComponent implements OnInit {
     constructor(private route: ActivatedRoute, private router: Router) {}
 
     ngOnInit() {
+
         this.sub = this.route.params.subscribe((values: {id: number}) => {
            this.navSelectionId = values.id;
 
@@ -46,8 +47,7 @@ export class ImageGridComponent implements OnInit {
     }
 
     showProdDetails(id: number) : void {
-      console.log('showProdDetails called', id);
-      this.router.navigate(['../details', {outlets: {'firstchild': [id]}}], { relativeTo: this.route });
+      this.router.navigate(['/landing', {outlets: {'firstchild': ['details', id]}}]);
     }
 
     ngOnDestroy() {

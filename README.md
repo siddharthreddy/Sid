@@ -1,5 +1,5 @@
 # BHOOMI app
----
+
 Sid's first Typescript project
 
 ## Getting Started

@@ -12,10 +12,9 @@ export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'landing', component: LandingPageComponent, children: [
-    { path: 'details:id', component: ProductDetailsComponent, outlet:'firstchild' },
-    { path: ':id', component: ImageGridComponent, outlet:'firstchild'}
+    { path: 'list/:id',  component: ImageGridComponent, outlet:'firstchild' },
+    { path: 'details/:id', component: ProductDetailsComponent, outlet:'firstchild'}
   ]},
-  { path: 'details', component: ProductDetailsComponent, outlet:'firstchild'},
   { path: '**', component: AppComponent },
 ];
 
