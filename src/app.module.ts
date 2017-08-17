@@ -4,6 +4,7 @@ import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app/app.component';
 import { LandingPageComponent } from './components/landing/landing.component';
@@ -18,6 +19,7 @@ import { routing, routes } from './app/app.routes';
 
 @NgModule({
   imports:      [BrowserModule,
+                 HttpModule,
                  RouterModule.forRoot(routes, {useHash: true})],
   declarations: [AppComponent,
                  LandingPageComponent,

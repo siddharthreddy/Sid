@@ -1,0 +1,111 @@
+{
+    "products": [{
+        "id": 1001,
+        "name": "Checkered Fashion Blazer",
+        "rating": 3,
+        "description": "Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.",
+        "price": "$173",
+        "availableSizes": [{
+            "id": "s",
+            "name": "small"
+        }, {
+            "id": "m",
+            "name": "medium"
+        }, {
+            "id": "l",
+            "name": "large"
+        }],
+        "colorOptions": [{
+            "color": "orange",
+            "availability": "not-available"
+        }, {
+            "id": "green",
+            "name": "available"
+        }, {
+            "id": "blue",
+            "name": "available"
+        }],
+        "src": "./images/man1.jpg"
+    }, {
+        "id": 1002,
+        "name": "Black & White Stripe suit",
+        "rating": 3,
+        "description": "Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.",
+        "price": "$95",
+        "availableSizes": [{
+            "id": "s",
+            "name": "small"
+        }, {
+            "id": "m",
+            "name": "medium"
+        }, {
+            "id": "l",
+            "name": "large"
+        }],
+        "colorOptions": [{
+            "color": "orange",
+            "availability": "not-available"
+        }, {
+            "id": "green",
+            "name": "available"
+        }, {
+            "id": "blue",
+            "name": "available"
+        }],
+        "src": "./images/woman1.jpg"
+    }, {
+        "id": 1003,
+        "name": "Bomber Jacket",
+        "rating": 3,
+        "description": "Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.",
+        "price": "$120",
+        "availableSizes": [{
+            "id": "s",
+            "name": "small"
+        }, {
+            "id": "m",
+            "name": "medium"
+        }, {
+            "id": "l",
+            "name": "large"
+        }],
+        "colorOptions": [{
+            "color": "orange",
+            "availability": "not-available"
+        }, {
+            "id": "green",
+            "name": "available"
+        }, {
+            "id": "blue",
+            "name": "available"
+        }],
+        "src": "./images/girl1.jpg"
+    }, {
+        "id": 1004,
+        "name": "Kids Suit",
+        "rating": 3,
+        "description": "Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.",
+        "price": "$76",
+        "availableSizes": [{
+            "id": "s",
+            "name": "small"
+        }, {
+            "id": "m",
+            "name": "medium"
+        }, {
+            "id": "l",
+            "name": "large"
+        }],
+        "colorOptions": [{
+            "color": "orange",
+            "availability": "not-available"
+        }, {
+            "id": "green",
+            "name": "available"
+        }, {
+            "id": "blue",
+            "name": "available"
+        }],
+        "src": "./images/boy1.jpg"
+    }]
+}
