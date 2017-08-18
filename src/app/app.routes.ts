@@ -1,5 +1,5 @@
 // Imports
-import { ModuleWithProviders }  from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingPageComponent } from '../components/landing/landing.component';
 import { AppComponent } from '../app/app.component';
@@ -11,10 +11,12 @@ import { ProductDetailsComponent } from '../components/productDetails/productDet
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'landing', component: LandingPageComponent, children: [
-    { path: 'list/:id',  component: ImageGridComponent, outlet:'firstchild' },
-    { path: 'details/:id', component: ProductDetailsComponent, outlet:'firstchild'}
-  ]},
+  {
+    path: 'landing', component: LandingPageComponent, children: [
+      { path: 'list/:id', component: ImageGridComponent, outlet: 'firstchild' },
+      { path: 'details/:id', component: ProductDetailsComponent, outlet: 'firstchild' }
+    ]
+  },
   { path: '**', component: AppComponent },
 ];
 

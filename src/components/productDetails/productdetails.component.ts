@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProductDetailsDataService } from '../../services/productDetailsData.service'
- 
+import { ProductDetailsDataService } from '../../services/productDetailsData.service';
+
 @Component({
-  selector: 'product-details',
-  templateUrl: '/src/components/productDetails/productDetails', 
-  providers: [ProductDetailsDataService]
+    selector: 'product-details',
+    templateUrl: '/src/components/productDetails/productDetails',
+    providers: [ProductDetailsDataService]
 })
 
 export class ProductDetailsComponent implements OnInit, OnDestroy {
@@ -16,7 +16,7 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
     allProductDetails: object;
     currentProduct: object;
 
-    constructor(private route: ActivatedRoute, private _productDetailsDataService: ProductDetailsDataService) {}
+    constructor(private route: ActivatedRoute, private _productDetailsDataService: ProductDetailsDataService) { }
 
     ngOnInit() {
 
@@ -26,7 +26,7 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
             this.sub = this.route.params.subscribe(params => {
                 this.id = +params['id'];
 
-                this.currentProduct = this.allProductDetails.products.find(function(product) {
+                this.currentProduct = data.products.find(function(product) {
                     return product.id === this.id;
                 }.bind(this));
 

@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
- 
+
 @Component({
-  selector: 'header',
-  templateUrl: '/src/components/header/header'
+    selector: 'header',
+    templateUrl: '/src/components/header/header'
 })
 
 export class HeaderComponent implements OnInit {
 
     headerText: string;
-    logoSrc: string
+    logoSrc: string;
 
-    constructor() {}
+    constructor() { }
 
     ngOnInit() {
         this.headerText = "BHOOMI";

@@ -1,7 +1,7 @@
 import './polyfill';
 
-import {NgModule}      from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpModule } from '@angular/http';
@@ -18,19 +18,19 @@ import { ProductDetailsComponent } from './components/productDetails/productDeta
 import { routing, routes } from './app/app.routes';
 
 @NgModule({
-  imports:      [BrowserModule,
-                 HttpModule,
-                 RouterModule.forRoot(routes, {useHash: true})],
+  imports: [BrowserModule,
+    HttpModule,
+    RouterModule.forRoot(routes, { useHash: true })],
   declarations: [AppComponent,
-                 LandingPageComponent,
-                 HomeComponent,
-                 HeaderComponent,
-                 FooterComponent,
-                 ContentComponent,
-                 NavComponent,
-                 ImageGridComponent,
-                 ProductDetailsComponent],
-  providers:    [{provide: LocationStrategy, useClass: HashLocationStrategy}],
-  bootstrap:    [AppComponent]
+    LandingPageComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContentComponent,
+    NavComponent,
+    ImageGridComponent,
+    ProductDetailsComponent],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
- 
+
 @Component({
-  selector: 'footer',
-  templateUrl: '/src/components/footer/footer'
+    selector: 'footer',
+    templateUrl: '/src/components/footer/footer'
 })
 
 export class FooterComponent implements OnInit {
 
     headerText: string;
-    logoSrc: string
+    logoSrc: string;
 
-    constructor() {}
+    constructor() { }
 
     ngOnInit() {
         this.headerText = 'SID';

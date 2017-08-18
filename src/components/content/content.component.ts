@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
- 
+
 @Component({
   selector: 'content',
   templateUrl: '/src/components/content/content'
@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class ContentComponent implements OnInit {
 
-    navSelectionId : string = '10';
+  navSelectionId: string = '10';
 
-    constructor() {}
+  constructor() { }
 
-    ngOnInit() {}
+  ngOnInit() { }
 
-    public handleEvent(childData:any){
-      this.navSelectionId = childData;
-	  }
+  public handleEvent(childData: any) {
+    this.navSelectionId = childData;
+  }
 
 }

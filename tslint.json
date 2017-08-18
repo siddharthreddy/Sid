@@ -1,0 +1,14 @@
+{
+    "rules": {
+        "class-name": true,
+        "no-duplicate-variable": true,
+        "no-any": false,
+        "curly": false,
+        "eofline": false,
+        "forin": true,
+        "semicolon": [
+            true,
+            "always"
+        ]
+    }
+}

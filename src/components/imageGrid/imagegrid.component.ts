@@ -1,16 +1,16 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import * as lodash from 'lodash';
-import {ActivatedRoute, Router} from '@angular/router';
- 
+import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
-  selector: 'image-grid',
-  templateUrl: '/src/components/imagegrid/imagegrid'
+    selector: 'image-grid',
+    templateUrl: '/src/components/imagegrid/imagegrid'
 })
 
 export class ImageGridComponent implements OnInit {
 
     navSelectionId: number;
-     private sub: any;
+    private sub: any;
 
     filteredImages = [];
 
@@ -30,24 +30,24 @@ export class ImageGridComponent implements OnInit {
         navId: ['10', '40', '50'],
         id: 1004,
         src: './images/boy1.jpg'
-    }]
+    }];
 
-    constructor(private route: ActivatedRoute, private router: Router) {}
+    constructor(private route: ActivatedRoute, private router: Router) { }
 
     ngOnInit() {
 
-        this.sub = this.route.params.subscribe((values: {id: number}) => {
-           this.navSelectionId = values.id;
+        this.sub = this.route.params.subscribe((values: { id: number }) => {
+            this.navSelectionId = values.id;
 
             this.filteredImages = lodash.shuffle(this.imageMap.filter(function(image) {
                 return image.navId.indexOf(this.navSelectionId) > -1;
             }.bind(this)));
         });
-        
+
     }
 
-    showProdDetails(id: number) : void {
-      this.router.navigate(['/landing', {outlets: {'firstchild': ['details', id]}}]);
+    showProdDetails(id: number): void {
+        this.router.navigate(['/landing', { outlets: { 'firstchild': ['details', id] } }]);
     }
 
     ngOnDestroy() {
